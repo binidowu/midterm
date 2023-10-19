@@ -64,28 +64,28 @@ const AddProduct = () => {
     // Render the form UI.
     return (
         <div className="hook">
-            <span className="hook__text">Add Product</span>
+            <span className="hook_text">Add Product</span>
             <form onSubmit={handleSubmit}>
                 {/* For each input, if there's an associated error, we'll display it */}
-                <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} className={`hook__input ${errors.name ? 'inputError' : ''}`} />
+                <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} className={`hook_input ${errors.name ? 'inputError' : ''}`} />
                 {/* Display error if present */}
                 {errors.name && <div className="error">{errors.name}</div>}
-                {/* Repeat for each field */}
-                <input type="text" name="description" placeholder="Description" value={formData.description} onChange={handleChange} className={`hook__input ${errors.description ? 'inputError' : ''}`} />
+                {/* Repeats for each field */}
+                <input type="text" name="description" placeholder="Description" value={formData.description} onChange={handleChange} className={`hook_input ${errors.description ? 'inputError' : ''}`} />
                 {errors.description && <div className="error">{errors.description}</div>}
 
-                <input type="text" name="category" placeholder="Category" value={formData.category} onChange={handleChange} className={`hook__input ${errors.category ? 'inputError' : ''}`} />
+                <input type="text" name="category" placeholder="Category" value={formData.category} onChange={handleChange} className={`hook_input ${errors.category ? 'inputError' : ''}`} />
                 {errors.category && <div className="error">{errors.category}</div>}
 
-                <input type="number" name="quantity" placeholder="Quantity" value={formData.quantity} onChange={handleChange} className={`hook__input ${errors.quantity ? 'inputError' : ''}`} />
+                <input type="number" name="quantity" placeholder="Quantity" value={formData.quantity} onChange={handleChange} className={`hook_input ${errors.quantity ? 'inputError' : ''}`} />
                 {errors.quantity && <div className="error">{errors.quantity}</div>}
 
-                <input type="number" name="price" placeholder="Price" value={formData.price} onChange={handleChange} className={`hook__input ${errors.price ? 'inputError' : ''}`} />
+                <input type="number" name="price" placeholder="Price" value={formData.price} onChange={handleChange} className={`hook_input ${errors.price ? 'inputError' : ''}`} />
                 {errors.price && <div className="error">{errors.price}</div>}
                 <div className='btn-ctn'>
                     {/* Submission and reset buttons. */}
-                    <button type="submit" className="hook__button">SUBMIT</button>
-                    <button type="button" className="hook__button" onClick={resetForm}>CANCEL</button>
+                    <button type="submit" className="hook_button">SUBMIT</button>
+                    <button type="button" className="hook_button" onClick={resetForm}>CANCEL</button>
                 </div>
             </form>
         </div>

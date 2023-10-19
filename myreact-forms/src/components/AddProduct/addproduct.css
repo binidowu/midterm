@@ -1,0 +1,83 @@
+/* Container styling */
+.hook {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+}
+
+/* Header text styling */
+.hook__text {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #333;
+}
+
+/* Input fields styling */
+.hook__input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; /* space between inputs */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Styling for input fields with errors */
+.inputError {
+    border-color: red;
+    background-color: #FDD;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    margin-bottom: 20px; /* space between error text and next input */
+    font-size: 0.875em;
+}
+
+/* Container for the buttons */
+.btn-ctn {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Button styling */
+.hook__button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745; /* green */
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.hook__button:hover {
+    background-color: #218838; /* dark green */
+}
+
+.hook__button:active {
+    background-color: #1e7e34; /* darker green */
+}
+
+/* Cancel button styling */
+.hook__button:last-child {
+    background-color: #dc3545; /* red */
+}
+
+.hook__button:last-child:hover {
+    background-color: #c82333; /* dark red */
+}
+
+.hook__button:last-child:active {
+    background-color: #bd2130; /* darker red */
+}
